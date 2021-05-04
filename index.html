@@ -32,8 +32,72 @@
                 <label id="name" for="name"> Surname Name</label>
                 <input type="text" name="name" id="surname" class="form-control" placeholder="Enter your Second Name" required />
             </div>
+            <div class="form-group">
+                <label id="address-line-1" for="address"> Addres line 1 </label>
+                <input type="text" name="address" id="address1" class="form-control" placeholder="Addess line 1">
 
+            </div>
+            <div class="form-group">
+                <label id="address-line-2" for="address"> Addres line 2 </label>
+                <input type="text" name="address" id="address2" class="form-control" placeholder="Address line 2">
+            </div>
+            <div class="form-group">
+                <label id="city" for="address">City</label>
+                <input type="text" name="city" id="city-label" class="form-control" placeholder="City">
+            </div>
+            <div class="form-group">
+                <label for="state">State</label>
+                <select multiple class="form-control" name="state" id="state-id">
+                    <option selected>Select</option>
+                    <option value="albama">Albama</option>
+                    <option value="alaska">Alaska</option>
+                    <option value="arizona">Arizona</option>
+                    <option value="Arkansas">Arkansas</option>
+                    <option value="California">California</option>
+                    <option value="Colorado">Colorado</option>
+                    <option value="Connecticut">Connecticut</option>
+                    <option value="Delaware">Delaware</option>
+                    <option value="Florida">Florida</option>
+                    <option value="Georgia">Georgia</option>
+                    <option value="Hawaii">Hawaii</option>
+                    <option value="Idaho">Idaho</option>
+                    <option value="Illinois">Illinois</option>
+                    <option value="Indiana">Indiana</option>
+                    <option value="Indiana">Indiana</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="zip-code">Zip Code</label>
+                <input type="text" class="form-control" name="zip" id="zip-id" placeholder="Zip Code">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" name="email-address" id="email-id" pattern=".+@globex.com" size="30" aria-describedby="emailHelpId" placeholder="damba@gamail.com" required>
+            </div>
+            <div class="form-group">
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" class="form-control" name="phonenumber" id="phonenumber-id" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div class="form-group">
+                <p>What is your gender?</p>
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                    Male
+                </label>
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="female-checkbox" id="female-id" value="checkedValue">
+                    Female
+                </label>
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="other-checboxk" id="other-id" value="checkedValue">
+                    Other
+                </label>
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="prefer-not-say" id="prefer-id" value="checkedValue" checked>
+                    Prefer not to say
+                </label>
 
+            </div>
 
         </form>
     </div>
