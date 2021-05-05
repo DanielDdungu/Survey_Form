@@ -12,11 +12,12 @@
 <body>
     <div class="container">
         <header class="header">
-            <h1 id="title" class="text-center">freeCodeCamp Survey Form</h1>
+            <h1 id="title" class="text-center">Covid19 Survey Form</h1>
             <p id="description" class="description text-center">
-                We are here to assist you! Please complete the form below for your complaints.
+                We are here to assist you! Please complete the form below for a better health asesement.
             </p>
         </header>
+        <hr class="">
         <form id="survey-form">
             <div class="form-group">
                 <label id="birth-date" for="date">What is your date of birth?</label>
@@ -25,7 +26,7 @@
             <hr>
             <div class="form-group" id="name">
                 <p>Please Enter Your Details</p>
-                <label id="first-name" for="name">First Name</label>
+                <label id="name-label" for="name">First Name</label>
                 <input type="text" name="name" id="firstname" class="form-control" placeholder="Enter your First Name" required />
             </div>
             <div class="form-group">
@@ -46,7 +47,7 @@
                 <input type="text" name="city" id="city-label" class="form-control" placeholder="City">
             </div>
             <div class="form-group">
-                <label for="state">State</label>
+                <label id="dropdown" for="state">State</label>
                 <select class="form-control" name="state" id="state-id" required>
                     <option selected></option>
                     <option value="albama">Albama</option>
@@ -101,7 +102,7 @@
             <hr>
             <div>
                 <p>Do you experience any of the below symptoms?</p>
-                <table class="table">
+                <table id="symptoms-table">
                     <thead>
                         <tr>
                             <th></th>
@@ -115,22 +116,22 @@
                         <tr>
                             <td scope="row">Cold</td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="cold-no" id="no-cold-id" type="radio" value="No-cold" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-tablel">
                                     <input class="form-check-input" name="slight-cold" id="id-slight-cold" type="radio" value="slightcold" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-tablel">
                                     <input class="form-check-input" name="medium-cold" id="id-medium-cold" type="radio" value="mediumcold" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="high-cold" id="id-highcold" type="radio" value="highcold" aria-label="">
                                 </label>
                             </td>
@@ -139,25 +140,25 @@
                             <td scope="row">Fever</td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="no-fever" id="id-nofever" type="radio" value="Nofever" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slightfevr" id="id-slightfever" type="radio" value="slightfever" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="mediumfever" id="id-mediumfever" type="radio" value="mediumfever" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="highfever" id="id-highfever" type="radio" value="checkedValue" aria-label="">
                                 </label>
                             </td>
@@ -165,24 +166,24 @@
                         <tr>
                             <td scope="row">Cough</td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="nocough" id="id-nocough" type="radio" value="nocough" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slightcough" id="id-slightcough" type="radio" value="checkedValue" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="mediumcough" id="id-mediumcough" type="radio" value="mediumcough" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="highcough" id="id-highcough" type="radio" value="highcough" aria-label="">
                                 </label>
                             </td>
@@ -191,25 +192,25 @@
                             <td scope="row">Shortness of Breath</td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="No-ShortnessofBreath" id="id-No-ShortnessofBreath" type="radio" value="NoShortnessofBreath" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slight-ShortnessofBreath" id="id-slight-ShortnessofBreath" type="radio" value="slight-ShortnessofBreath" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="medium-ShortnessofBreath" id="id-medium-ShortnessofBreath" type="radio" value="medium-ShortnessofBreath" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="high-ShortnessofBreath" id="id-high-ShortnessofBreath" type="radio" value="high-ShortnessofBreath" aria-label="">
                                 </label>
                             </td>
@@ -218,25 +219,25 @@
                             <td scope="row">Headache</td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="no-Headache" id="id-no-Headache" type="radio" value="no-Headache" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slight-Headache" id="id-slight-Headache" type="radio" value="slight-Headache" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="medium-headache" id="id-medium-headache" type="radio" value="medium-headache" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="high-headache" id="id-high-headache" type="radio" value="high-headache" aria-label="">
                                 </label>
                             </td>
@@ -245,25 +246,25 @@
                             <td scope="row">Muscle Pain</td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="no-Muscle-Pain" id="id-no-Muscle-Pain" type="radio" value="no-Muscle-Pain" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slight-Muscle-Pain" id="id-slight-Muscle-Pain" type="radio" value="slight-Muscle-Pain" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="medium-Muscle-Pain" id="id-medium-Muscle-Pain" type="radio" value="medium-Muscle-Pain" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="medium-Muscle-Pain" id="is-medium-Muscle-Pain" type="radio" value="medium-Muscle-Pain" aria-label="">
                                 </label>
                             </td>
@@ -272,25 +273,25 @@
                             <td scope="row">Sore Throat</td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="no-sore-throat" id="id-no-sore-throat" type="radio" value="checkedValue" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slight-sore-throat" id="id-slight-sore-throat" type="radio" value="slight-sore-throat" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="medium-sore-throat" id="id-medium-sore-throat" type="radio" value="medium-sore-throat" aria-label="">
                                 </label>
                             </td>
                             <td>
 
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="high-sore-throat" id="id-high-sore-throat" type="radio" value="high-sore-throat" aria-label="">
                                 </label>
                             </td>
@@ -298,22 +299,22 @@
                         <tr>
                             <td scope="row">Diarrhea</td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="no-Diarrhea" id="id-no-Diarrhea" type="radio" value="no-Diarrhea" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="slight-Diarrhea" id="id-slight-Diarrhea" type="radio" value="slight-Diarrhea" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="medium-Diarrhea" id="id-medium-Diarrhea" type="radio" value="medium-Diarrhea" aria-label="">
                                 </label>
                             </td>
                             <td>
-                                <label class="form-check-label">
+                                <label class="form-check-label-table">
                                     <input class="form-check-input" name="high-Diarrhea" id="id-high-Diarrhea" type="radio" value="high-Diarrhea" aria-label="">
                                 </label>
                             </td>
@@ -333,6 +334,7 @@
                 <p>Do you suffer from any of the below diseases?</p>
                 <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
+
                 Cardiovascular diseases
               </label>
                 <label class="form-check-label">
@@ -341,6 +343,7 @@
               </label>
                 <label class="form-check-label">
                 <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
+
                 Cancer
               </label>
                 <label class="form-check-label">
@@ -360,23 +363,25 @@
             <div class="form-check">
                 <p>Do you have a travel history to any of these countries?</p>
                 <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
+
                 Spain
               </label>
                 <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
                 China
               </label>
                 <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" >
+
                 India
               </label>
                 <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
                 United Kingdom
               </label>
                 <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
                 Italy
               </label>
             </div>
@@ -384,23 +389,23 @@
             <div class="form-check">
                 <p>Approximately, how many people have you come in contact with in past 15 days?</p>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 1-5
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue">
                 5-10
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 10-15
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 15-20
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 More than 50
               </label>
             </div>
@@ -408,11 +413,11 @@
             <div class="form-check">
                 <p>Have you already shared your medical history with government authorities?</p>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="yes" id="id-yes" value="yes">
                 Yes
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="no" id="id-no" value="no" >
                 No
               </label>
             </div>
@@ -420,23 +425,23 @@
             <div class="form-check">
                 <p>Do you work in any of these high risk occupations?</p>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 Healthcare
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue">
                 Assisted-living
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 Military institution
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 Aged-care facility
               </label>
                 <label class="form-check-label">
-                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" checked>
+                <input type="radio" class="form-check-input" name="" id="" value="checkedValue" >
                 Other
               </label>
             </div>
@@ -444,6 +449,8 @@
                 <button id="submit" type="submit" class="btn btn-primary">Submit</button>
             </div>
         </form>
+        <blockquote>Survey developed by <a href="https://www.linkedin.com/in/daniel-ddungu-594bb613b/" target="_blank" rel="noopener noreferrer">Daniel</a></blockquote>
+        <hr class="end">
     </div>
 
 </body>

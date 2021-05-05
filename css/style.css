@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 html,
 body {
     margin: 0;
@@ -5,6 +6,7 @@ body {
     background: linear-gradient(#141e30, #243b55);
     font-family: sans-serif;
     margin: auto;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .container {
@@ -14,9 +16,9 @@ body {
     width: 50%;
     padding: 40px;
     transform: translate(-50%, 3%);
-    background: #bdc3c7;
+    background-color: lightblue;
     box-sizing: border-box;
-    box-shadow: 0 15px 20px #2c3e50;
+    box-shadow: 0 15px 20px #2e3031;
     border-radius: 10px;
     margin-bottom: 150px;
 }
@@ -24,7 +26,7 @@ body {
 .container header {
     margin: 0 0 30px;
     padding: 0;
-    color: #fff;
+    color: black;
     text-align: center;
 }
 
@@ -63,10 +65,29 @@ textarea {
     border: 2px solid rgb(247, 245, 245);
     border-radius: 4px;
     background-color: transparent;
-    resize: none;
+    resize: vertical;
 }
 
-input[type=submit] {
+#symptoms-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#symptoms-table td,
+#symptoms-table thead {
+    border: none;
+    padding: 8px;
+    align-items: center;
+}
+
+#symptoms-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    font-weight: normal;
+}
+
+button {
     width: 100%;
     background-color: #4CAF50;
     color: white;
@@ -81,10 +102,16 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
+h1 {
+    font-weight: 400;
+    line-height: 1.2;
+}
+
 p {
     font-size: 1.125rem;
     margin-top: 0;
     margin-bottom: 0.5rem;
+    font-weight: bolder;
 }
 
 label {
@@ -92,4 +119,56 @@ label {
     align-items: center;
     font-size: 1.125rem;
     margin-bottom: 0.5rem;
+}
+
+.form-check-label {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+
+/* Hide the browser's default checkbox */
+
+input[type=radio] input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+hr {
+    overflow: visible;
+    /* For IE */
+    height: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px 0 0 0;
+    border-radius: 20px;
+}
+
+hr:before {
+    /* Not really supposed to work, but does */
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+hr.end {
+    display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    border-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
 }
