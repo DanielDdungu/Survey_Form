@@ -178,7 +178,6 @@ hr.end {
     margin: 3.125rem auto 0 auto;
 }
 
-
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
